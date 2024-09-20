@@ -12,7 +12,7 @@ export default function HeaderModal({ toggleSlideOver }) {
         ></div>
         <div
           id="slideover"
-          className="absolute flex flex-col w-full overflow-hidden items-center pt-8 pb-10 px-10 gap-y-4 text-xl border-b-[1px] border-black bg-white duration-500 ease-out transition-all z-10 -translate-y-[125%]"
+          className="absolute flex flex-col w-full overflow-hidden items-center pt-8 pb-10 px-10 gap-y-4 text-xl border-b-[1px] border-black bg-mint duration-500 ease-out transition-all z-10 -translate-y-[125%]"
         >
           <button onClick={toggleSlideOver}>Home</button>
           <div className="w-full border-b-[1px] border-black"></div>

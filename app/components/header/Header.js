@@ -19,22 +19,33 @@ export default function Header() {
   return (
     <>
       <div className="top-0 sticky inset-0 z-50 h-full">
-        <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 md:py-4 md:px-8 bg-white">
-          <div className="flex gap-x-10 items-center text-lg">
+        <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 md:py-4 md:px-36 bg-mint">
+          <div className="flex gap-x-10 items-center">
             <a href="/" className="flex flex-col items-center">
-              <div className="text-2xl font-bold">C.E.M.A.</div>
+              <div className="text-2xl font-bold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-[#00A6FB] hover:via-rose hover:to-[#00A6FB] hover:animate-text hover:transition-all hover:delay-75">
+                C.E.M.A.
+              </div>
               <div className="text-xs">Civil Engineering</div>
               <div className="text-xs">Manual Assistant</div>
             </a>
-            <a href="/about" className="hidden md:flex hover:text-pink">
+            <a
+              href="/about"
+              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75"
+            >
               Who We Are
             </a>
-            <a href="sample" className="hidden md:flex hover:text-pink">
+            <a
+              href="sample"
+              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75"
+            >
               Sample Query
             </a>
           </div>
-          <div className="flex items-center text-lg">
-            <a href="/feedback" className="hidden md:flex hover:text-pink">
+          <div className="flex items-center">
+            <a
+              href="/feedback"
+              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75"
+            >
               Send Us Feedback!
             </a>
             <div>
