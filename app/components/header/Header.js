@@ -22,7 +22,7 @@ export default function Header() {
         <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 md:py-4 md:px-36 bg-mint">
           <div className="flex gap-x-10 items-center">
             <a href="/" className="flex flex-col items-center">
-              <div className="text-2xl font-bold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-[#00A6FB] hover:via-rose hover:to-[#00A6FB] hover:animate-text hover:transition-all hover:delay-75">
+              <div className="text-2xl font-bold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-blue hover:via-rose hover:to-[#00A6FB] hover:animate-text hover:transition-all hover:delay-75">
                 C.E.M.A.
               </div>
               <div className="text-xs">Civil Engineering</div>
@@ -30,13 +30,13 @@ export default function Header() {
             </a>
             <a
               href="/about"
-              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75"
+              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75 hover:underline hover:underline-offset-4 hover:decoration-blue"
             >
-              Who We Are
+              About
             </a>
             <a
               href="sample"
-              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75"
+              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75 hover:underline hover:underline-offset-4 hover:decoration-blue"
             >
               Sample Query
             </a>
@@ -44,7 +44,7 @@ export default function Header() {
           <div className="flex items-center">
             <a
               href="/feedback"
-              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75"
+              className="hidden md:flex hover:text-rose hover:transition-all hover:delay-75 hover:underline hover:underline-offset-4 hover:decoration-blue"
             >
               Send Us Feedback!
             </a>

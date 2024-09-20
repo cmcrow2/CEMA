@@ -28,6 +28,7 @@ module.exports = {
         },
         rose: "#F75590",
         indigo: "#AFA2FF",
+        blue: "#00A6FB",
       },
       animation: {
         text: "text 5s ease infinite",
