@@ -7,7 +7,7 @@ export default function HeaderModal({ toggleSlideOver }) {
       >
         <div
           id="slideover-bg"
-          className="absolute h-screen w-full bg-black-900 duration-500 ease-out transition-all opacity-0"
+          className="absolute -inset-y-[5.1rem] h-screen w-full bg-black-900 duration-500 ease-out transition-all opacity-0"
           onClick={toggleSlideOver}
         ></div>
         <div
