@@ -21,18 +21,22 @@ export default function Header() {
       <div className="top-0 sticky inset-0 z-50 h-full">
         <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 md:py-4 md:px-8 bg-white">
           <div className="flex gap-x-10 items-center text-lg">
-            <div className="flex flex-col items-center">
+            <a href="/" className="flex flex-col items-center">
               <div className="text-2xl font-bold">C.E.M.A.</div>
               <div className="text-xs">Civil Engineering</div>
               <div className="text-xs">Manual Assistant</div>
-            </div>
-            <div className="hidden md:flex hover:text-pink">Who We Are</div>
-            <div className="hidden md:flex hover:text-pink">Sample Query</div>
+            </a>
+            <a href="/about" className="hidden md:flex hover:text-pink">
+              Who We Are
+            </a>
+            <a href="sample" className="hidden md:flex hover:text-pink">
+              Sample Query
+            </a>
           </div>
           <div className="flex items-center text-lg">
-            <div className="hidden md:flex hover:text-pink">
+            <a href="/feedback" className="hidden md:flex hover:text-pink">
               Send Us Feedback!
-            </div>
+            </a>
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
