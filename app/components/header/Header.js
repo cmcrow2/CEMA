@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="top-0 sticky inset-0 z-50 h-full">
+      <div className="top-0 sticky inset-0 z-50 h-full font-courier">
         <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 md:py-4 md:px-36 bg-mint">
           <div className="flex gap-x-10 items-center">
             <a href="/" className="flex flex-col items-center">

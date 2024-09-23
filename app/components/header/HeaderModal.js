@@ -1,6 +1,6 @@
 export default function HeaderModal({ toggleSlideOver }) {
   return (
-    <div className="sticky top-20">
+    <div className="sticky top-20 font-courier">
       <div
         id="slideover-container"
         className="h-full w-full inset-y-20 invisible"
