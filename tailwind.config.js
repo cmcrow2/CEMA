@@ -30,6 +30,9 @@ module.exports = {
         indigo: "#AFA2FF",
         blue: "#00A6FB",
       },
+      fontFamily: {
+        courier: ["Courier", "sans-serif"],
+      },
       animation: {
         text: "text 5s ease infinite",
       },
