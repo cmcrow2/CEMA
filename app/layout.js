@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "./components/header/Header";
 
 export const metadata = {
-  title: "CEMA",
+  title: "Askitect - A Civil Engineering AI",
   description: "Civil Engineering Manual Assistant",
 };
 

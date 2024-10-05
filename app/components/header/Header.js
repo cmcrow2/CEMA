@@ -18,12 +18,12 @@ export default function Header() {
 
   return (
     <>
-      <div className="top-0 sticky inset-0 z-50 h-full font-courier">
-        <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 lg:py-4 lg:px-36 bg-sand-300">
+      <div className="top-0 sticky inset-0 z-50 h-full font-courier shadow-md">
+        <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 lg:py-4 lg:px-36 bg-sand-100">
           <div className="flex gap-x-10 items-center">
             <a href="/" className="flex flex-col items-center">
-              <div className="text-2xl font-bold hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-blue hover:via-blue-500 hover:to-blue hover:animate-text hover:transition-all hover:delay-75">
-                C.E.M.A.
+              <div className="text-2xl font-major hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-black hover:via-blue-900 hover:to-black hover:animate-text hover:transition-all hover:delay-75">
+                Askitect
               </div>
               <div className="text-xs">Civil Engineering</div>
               <div className="text-xs">Manual Assistant</div>

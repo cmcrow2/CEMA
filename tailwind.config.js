@@ -6,6 +6,10 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      courier: ["Courier", "sans-serif"],
+      major: ["Major Mono Display"],
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -62,9 +66,6 @@ module.exports = {
           800: "#73BFE7",
           900: "#62B7E4",
         },
-      },
-      fontFamily: {
-        courier: ["Courier", "sans-serif"],
       },
       animation: {
         text: "text 5s ease infinite",
