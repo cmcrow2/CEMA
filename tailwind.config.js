@@ -1,10 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+const pixelValues = [...Array(200).keys()].map((x) => ++x);
+const pixelSafelist = [];
+pixelValues.forEach((value) => {
+  pixelSafelist.push(`h-[calc(100vh-${value}px)]`);
+  pixelSafelist.push(`xl:h-[calc(100vh-${value}px)]`);
+});
+
+module.exports = withMT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: pixelSafelist,
   theme: {
     fontFamily: {
       courier: ["Courier", "sans-serif"],
@@ -16,6 +27,8 @@ module.exports = {
         foreground: "var(--foreground)",
         black: {
           DEFAULT: "#121417",
+          700: "#818C9C",
+          800: "#3F4650",
           900: "#363C45",
         },
         mint: {
@@ -85,4 +98,4 @@ module.exports = {
     },
   },
   plugins: [],
-};
+});
