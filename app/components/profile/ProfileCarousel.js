@@ -81,7 +81,6 @@ export default function ProfileCarousel() {
           </div>
         )}
         className="py-10 md:hidden"
-        autoplay={true}
         loop={true}
       >
         {profileCards}
