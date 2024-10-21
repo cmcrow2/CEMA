@@ -25,7 +25,7 @@ export default function ProfileCarousel() {
             color="black"
             size="lg"
             onClick={handlePrev}
-            className="!absolute top-2/4 left-4 -translate-y-2/4"
+            className="!absolute top-2/4 left-2 -translate-y-2/4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function ProfileCarousel() {
             color="black"
             size="lg"
             onClick={handleNext}
-            className="!absolute top-2/4 !right-4 -translate-y-2/4"
+            className="!absolute top-2/4 !right-2 -translate-y-2/4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ export default function ProfileCarousel() {
       >
         {profileCards}
       </Carousel>
-      <div className="hidden md:flex flex-row pt-10 gap-x-4 overflow-x-scroll">
+      <div className="hidden md:flex flex-row pt-10 gap-x-4 overflow-x-scroll pb-10">
         {profileCards}
       </div>
     </>

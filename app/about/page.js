@@ -7,7 +7,9 @@ import { twMerge } from "tailwind-merge";
 
 import Image from "next/image";
 import civileng from "@/images/civileng.jpeg";
+import civilTeam from "@/images/civil_team.jpeg";
 import ProfileCarousel from "../components/profile/ProfileCarousel";
+import Spacer from "../components/misc/Spacer";
 
 export default function WhoWeAre() {
   // gsap.registerPlugin(ScrollTrigger);
@@ -36,7 +38,7 @@ export default function WhoWeAre() {
             src={civileng}
             alt="Civil Engineering"
             className={twMerge(
-              "h-56 md:h-72 w-full sticky top-0 object-cover object-[right,0,bottom,35%]",
+              "h-56 md:h-72 w-full sticky top-0 object-cover object-[right,0,bottom,35%] rounded-bl-[10rem]",
               xlHeightClass
             )}
             priority
@@ -45,7 +47,7 @@ export default function WhoWeAre() {
         <div className="xl:w-3/5">
           {/* Who We Are Section */}
           <div
-            className={`pt-6 px-4 pb-20 md:w-[75%] md:m-auto md:pt-32 md:pb-10 lg:pt-40 lg:overflow-scroll lg:snap-always lg:snap-center ${xlHeightClass} xl:w-[65%] xl:m-auto`}
+            className={`pt-6 px-4 pb-20 md:w-[75%] md:m-auto md:pt-32 md:pb-10 xl:pt-40 xl:overflow-scroll xl:snap-always xl:snap-center ${xlHeightClass} xl:w-[65%] xl:m-auto`}
           >
             <h1 className="text-3xl font-courier pb-2 lg:text-4xl xl:text-5xl xl:pb-4">
               Who We Are
@@ -65,7 +67,7 @@ export default function WhoWeAre() {
               </p>
             </div>
             <div className="pt-6 flex flex-col gap-y-4 text-base md:flex-row md:gap-x-4 xl:pt-16">
-              <button className="px-4 py-2 border-[0.5px] border-black hover:bg-blue-100 hover:transition-all rounded-md flex flex-row gap-x-2 items-center">
+              <button className="px-4 py-2 border-[0.5px] border-black hover:text-blue hover:border-blue hover:shadow-md hover:transition-all rounded-md flex flex-row gap-x-2 items-center">
                 Contact Us
                 <span>
                   <svg
@@ -86,7 +88,7 @@ export default function WhoWeAre() {
               </button>
               <a
                 href="/feedback"
-                className="px-4 py-2 border-[0.5px] border-black hover:bg-blue-100 hover:transition-all rounded-md flex flex-row gap-x-2 items-center"
+                className="px-4 py-2 border-[0.5px] border-black hover:text-blue hover:border-blue hover:shadow-md hover:transition-all rounded-md flex flex-row gap-x-2 items-center"
               >
                 Send Us Feedback
                 <span>
@@ -108,9 +110,27 @@ export default function WhoWeAre() {
               </a>
             </div>
           </div>
+          {/* SPACER */}
+          <div className="flex justify-center p-48 xl:hidden">
+            <div className="pt-10"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-28"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+              />
+            </svg>
+          </div>
           {/* What We Do Section */}
           <div
-            className={`pt-6 px-4 pb-20 md:w-[75%] md:m-auto md:pt-32 md:pb-10 lg:pt-40 lg:overflow-scroll lg:snap-always lg:snap-center ${xlHeightClass} xl:w-[65%] xl:m-auto`}
+            className={`pt-6 px-4 pb-20 md:w-[75%] md:m-auto md:pt-32 md:pb-10 xl:pt-40 xl:overflow-scroll xl:snap-always xl:snap-center ${xlHeightClass} xl:w-[65%] xl:m-auto`}
           >
             <h2 className="text-3xl font-courier pb-2 lg:text-4xl xl:text-5xl xl:pb-4">
               What We Do
@@ -135,19 +155,35 @@ export default function WhoWeAre() {
           </div>
         </div>
       </div>
+      {/* SPACER */}
+      <Spacer top={true}></Spacer>
       {/* Our Team Section */}
-      <div
-        className={`px-4 pb-20 md:w-[75%] md:m-auto md:pt-32 md:pb-10 lg:overflow-scroll lg:snap-always lg:snap-center ${xlHeightClass}`}
-      >
-        <h2 className="text-3xl font-courier pb-2">Our Team</h2>
-        <hr className="border-black"></hr>
-        <ProfileCarousel></ProfileCarousel>
+      <div className="xl:flex xl:flex-row bg-sand-200">
+        <Image
+          src={civilTeam}
+          alt="Civil Engineers discussing problems"
+          className={twMerge(
+            "hidden h-56 md:h-72 w-full sticky top-0 xl:block object-cover rounded-r-[10rem]",
+            xlHeightClass
+          )}
+        ></Image>
+        <div
+          className={`px-4 pb-20 md:w-screen md:m-auto md:pt-32 md:pb-10 xl:overflow-scroll xl:snap-always xl:snap-center ${xlHeightClass}`}
+        >
+          <div className="w-[90%] m-auto">
+            <h2 className="text-3xl font-courier pb-2">Our Team</h2>
+            <hr className="border-black"></hr>
+            <ProfileCarousel></ProfileCarousel>
+          </div>
+        </div>
       </div>
+      {/* SPACER */}
+      <Spacer top={false}></Spacer>
       {/* Contact Us Section */}
       <div
-        className={`pb-28 px-4 md:w-[75%] md:m-auto md:pt-32 md:pb-32 lg:snap-always lg:overflow-scroll lg:snap-center  lg:pt-40 xl:w-[50%] ${xlHeightClass} xl:m-auto`}
+        className={`pb-28 px-4 md:w-[75%] md:m-auto md:pt-32 md:pb-32 xl:snap-always xl:overflow-scroll xl:snap-center  xl:pt-40 xl:w-[50%] ${xlHeightClass} xl:m-auto`}
       >
-        <h2 className="text-3xl font-courier pb-2 w-72 lg:w-[30rem] xl:text-5xl xl:pb-4">
+        <h2 className="text-3xl font-courier pb-2 w-72 xl:w-[30rem] xl:text-5xl xl:pb-4">
           We&apos;d love to hear from you!
         </h2>
         <hr className="border-black"></hr>
@@ -155,10 +191,12 @@ export default function WhoWeAre() {
           <p className="">
             If you like what you see, or have any constructive feedback for us,
             please take some time to fill out our{" "}
-            <a href="/feedback" className="text-blue">
-              form
+            <a
+              href="/feedback"
+              className="text-blue hover:underline hover:font-bold transition-all"
+            >
+              form!
             </a>
-            !
           </p>
           <p className="">
             Since we are currently in the early stages of development, we are
@@ -167,7 +205,7 @@ export default function WhoWeAre() {
           </p>
         </div>
         <div className="pt-6 flex flex-col gap-y-4 text-base md:flex-row md:gap-x-4 xl:pt-16">
-          <button className="px-4 py-2 border-[0.5px] border-black hover:bg-blue-100 hover:transition-all rounded-md flex flex-row gap-x-2 items-center">
+          <button className="px-4 py-2 border-[0.5px] border-black hover:text-blue hover:border-blue hover:shadow-md hover:transition-all rounded-md flex flex-row gap-x-2 items-center">
             Contact Us
             <span>
               <svg
@@ -188,7 +226,7 @@ export default function WhoWeAre() {
           </button>
           <a
             href="/feedback"
-            className="px-4 py-2 border-[0.5px] border-black hover:bg-blue-100 hover:transition-all rounded-md flex flex-row gap-x-2 items-center"
+            className="px-4 py-2 border-[0.5px] border-black hover:text-blue hover:border-blue hover:shadow-md hover:transition-all rounded-md flex flex-row gap-x-2 items-center"
           >
             Send Us Feedback
             <span>
