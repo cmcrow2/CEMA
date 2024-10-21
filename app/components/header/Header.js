@@ -18,23 +18,37 @@ export default function Header() {
 
   return (
     <>
-      <div className="top-0 sticky inset-0 z-50 h-full">
-        <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 md:py-4 md:px-8 bg-white">
-          <div className="flex gap-x-10 items-center text-lg">
+      <div
+        id="header"
+        className="top-0 sticky inset-0 z-50 font-courier shadow-md"
+      >
+        <div className="flex justify-between border-b-[1px] border-black text-black py-2 px-4 lg:py-4 lg:px-36 bg-sand-100">
+          <div className="flex gap-x-10 items-center">
             <a href="/" className="flex flex-col items-center">
-              <div className="text-2xl font-bold">C.E.M.A.</div>
+              <div className="text-2xl font-major hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-black hover:via-blue hover:to-black hover:animate-text hover:transition-all hover:delay-75">
+                Askitect
+              </div>
               <div className="text-xs">Civil Engineering</div>
               <div className="text-xs">Manual Assistant</div>
             </a>
-            <a href="/about" className="hidden md:flex hover:text-pink">
-              Who We Are
+            <a
+              href="/about"
+              className="hidden lg:flex hover:text-blue hover:transition-all hover:delay-75 hover:underline hover:underline-offset-4 hover:decoration-black"
+            >
+              About
             </a>
-            <a href="sample" className="hidden md:flex hover:text-pink">
+            <a
+              href="sample"
+              className="hidden lg:flex hover:text-blue hover:transition-all hover:delay-75 hover:underline hover:underline-offset-4 hover:decoration-black"
+            >
               Sample Query
             </a>
           </div>
-          <div className="flex items-center text-lg">
-            <a href="/feedback" className="hidden md:flex hover:text-pink">
+          <div className="flex items-center">
+            <a
+              href="/feedback"
+              className="hidden lg:flex hover:text-blue hover:transition-all hover:delay-75 hover:underline hover:underline-offset-4 hover:decoration-black"
+            >
               Send Us Feedback!
             </a>
             <div>
@@ -44,7 +58,7 @@ export default function Header() {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="size-10 md:hidden"
+                className="size-10 lg:hidden"
                 onClick={() => {
                   toggleSlideOver();
                 }}
