@@ -17,15 +17,15 @@ export default function HeaderModal({ toggleSlideOver }) {
           <a href="/" onClick={toggleSlideOver}>
             Home
           </a>
-          <div className="w-[75%] border-b-[1px] border-black"></div>
+          <div className="w-[75%] md:w-[40%] border-b-[1px] border-black-700"></div>
           <a href="/about" onClick={toggleSlideOver}>
             About
           </a>
-          <div className="w-[75%] border-b-[1px] border-black"></div>
+          <div className="w-[75%] md:w-[40%] border-b-[1px] border-black-700"></div>
           <a href="/sample" onClick={toggleSlideOver}>
             Sample Query
           </a>
-          <div className="w-[75%] border-b-[1px] border-black"></div>
+          <div className="w-[75%] md:w-[40%] border-b-[1px] border-black-700"></div>
           <a href="/feedback" onClick={toggleSlideOver}>
             Send Us Feedback!
           </a>
